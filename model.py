@@ -71,6 +71,7 @@ class NeuralNetwork:
                 self.parameters[f'b{i + 1}'] -= alpha * gradients[f'db{i + 1}']
 
             Y_hat, cache = self.forward(X, training=True)
+            print('probabilities')
 
             epoch_loss = np.sum(self.loss.evaluate(Y, Y_hat))
             accuracy = acc(Y, Y_hat)
