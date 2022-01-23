@@ -18,7 +18,7 @@ def plot_loss(losses):
     if not os.path.isdir('./img/full'):
         os.mkdir('./img/full')
 
-    plt.savefig(f'./img/full/loss_curve.png')
+    plt.savefig('./img/full/loss_curve.png')
     plt.close()
 
 def plot_boundary(X, Y, forward, epoch):
